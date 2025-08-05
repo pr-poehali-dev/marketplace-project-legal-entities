@@ -8,21 +8,21 @@ import Icon from "@/components/ui/icon";
 
 export default function Index() {
   return (
-    <div className="min-h-screen bg-slate-50">
+    <div className="min-h-screen bg-background cyber-grid">
       {/* Header */}
-      <header className="bg-white border-b border-slate-200">
+      <header className="bg-card/80 backdrop-blur-md border-b border-primary/20 neon-border">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-4">
-              <h1 className="text-2xl font-bold text-slate-800">B2B MARKETPLACE</h1>
+              <h1 className="text-2xl font-bold text-primary tech-glow">⚡ TECH MARKETPLACE</h1>
             </div>
             
             <nav className="hidden md:flex space-x-8">
-              <a href="#" className="text-slate-600 hover:text-primary transition-colors">Главная</a>
-              <a href="#" className="text-slate-600 hover:text-primary transition-colors">Каталог</a>
-              <a href="#" className="text-slate-600 hover:text-primary transition-colors">Личный кабинет</a>
-              <a href="#" className="text-slate-600 hover:text-primary transition-colors">Заказы</a>
-              <a href="#" className="text-slate-600 hover:text-primary transition-colors">Поддержка</a>
+              <a href="#" className="text-foreground/70 hover:text-primary transition-all hover:glow">ГЛАВНАЯ</a>
+              <a href="#" className="text-foreground/70 hover:text-primary transition-all hover:glow">КАТАЛОГ</a>
+              <a href="#" className="text-foreground/70 hover:text-primary transition-all hover:glow">КАБИНЕТ</a>
+              <a href="#" className="text-foreground/70 hover:text-primary transition-all hover:glow">ЗАКАЗЫ</a>
+              <a href="#" className="text-foreground/70 hover:text-primary transition-all hover:glow">ПОДДЕРЖКА</a>
             </nav>
 
             <div className="flex items-center space-x-4">
@@ -34,71 +34,72 @@ export default function Index() {
       </header>
 
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-primary to-blue-600 text-white py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-6xl font-bold mb-6">
-            Платформа для B2B торговли
+      <section className="bg-gradient-to-r from-primary via-purple-600 to-cyan-600 text-white py-20 relative overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-r from-primary/20 to-cyan-600/20 animate-pulse"></div>
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+          <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white to-cyan-300 bg-clip-text text-transparent">
+            CYBER B2B PLATFORM
           </h2>
-          <p className="text-xl md:text-2xl mb-8 opacity-90">
-            Объединяем юридических лиц для эффективного ведения бизнеса
+          <p className="text-xl md:text-2xl mb-8 opacity-90 font-mono">
+            > Соединяем корпорации через нейросеть будущего
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <Input 
-              placeholder="Поиск товаров и поставщиков" 
-              className="bg-white text-slate-800 border-0"
+              placeholder=">> ПОИСК В БАЗЕ ДАННЫХ..." 
+              className="bg-black/50 text-white border border-primary/50 placeholder:text-gray-400 tech-glow font-mono"
             />
-            <Button size="lg" variant="secondary">
+            <Button size="lg" className="bg-primary tech-glow hover:bg-primary/80 font-mono">
               <Icon name="Search" size={20} className="mr-2" />
-              Найти
+              СКАНИРОВАТЬ
             </Button>
           </div>
         </div>
       </section>
 
       {/* Verification System */}
-      <section className="py-16">
+      <section className="py-16 relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h3 className="text-3xl font-bold text-slate-800 mb-4">Система верификации</h3>
-            <p className="text-lg text-slate-600">Работайте только с проверенными компаниями</p>
+            <h3 className="text-3xl font-bold text-primary mb-4 font-mono tech-glow">НЕЙРО-ВЕРИФИКАЦИЯ</h3>
+            <p className="text-lg text-foreground/70 font-mono">ИИ анализирует надежность корпораций</p>
           </div>
           
           <div className="grid md:grid-cols-3 gap-8">
             <Card className="text-center p-6">
-              <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Shield" size={32} className="text-green-600" />
+              <div className="w-16 h-16 bg-primary/20 rounded-full flex items-center justify-center mx-auto mb-4 tech-glow">
+                <Icon name="Shield" size={32} className="text-primary" />
               </div>
-              <h4 className="text-xl font-semibold mb-2">Юридическая проверка</h4>
-              <p className="text-slate-600">Проверка документов и регистрации компании</p>
-              <Badge className="mt-4 bg-green-100 text-green-700">Активно</Badge>
+              <h4 className="text-xl font-semibold mb-2 text-primary font-mono">КВАНТОВАЯ ПРОВЕРКА</h4>
+              <p className="text-foreground/70 font-mono text-sm">ИИ сканирует блокчейн документов</p>
+              <Badge className="mt-4 bg-green-500/20 text-green-400 border border-green-500/50 font-mono">ОНЛАЙН</Badge>
             </Card>
 
             <Card className="text-center p-6">
-              <div className="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="FileText" size={32} className="text-blue-600" />
+              <div className="w-16 h-16 bg-cyan-500/20 rounded-full flex items-center justify-center mx-auto mb-4 tech-glow">
+                <Icon name="FileText" size={32} className="text-cyan-400" />
               </div>
-              <h4 className="text-xl font-semibold mb-2">Документооборот</h4>
-              <p className="text-slate-600">Электронный документооборот и договоры</p>
-              <Badge className="mt-4 bg-blue-100 text-blue-700">Доступно</Badge>
+              <h4 className="text-xl font-semibold mb-2 text-cyan-400 font-mono">ЦИФРОВОЙ ОБОРОТ</h4>
+              <p className="text-foreground/70 font-mono text-sm">Крипто-подпись смарт-контрактов</p>
+              <Badge className="mt-4 bg-cyan-500/20 text-cyan-400 border border-cyan-500/50 font-mono">АКТИВАЦИЯ</Badge>
             </Card>
 
             <Card className="text-center p-6">
-              <div className="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
-                <Icon name="Award" size={32} className="text-purple-600" />
+              <div className="w-16 h-16 bg-purple-500/20 rounded-full flex items-center justify-center mx-auto mb-4 tech-glow">
+                <Icon name="Award" size={32} className="text-purple-400" />
               </div>
-              <h4 className="text-xl font-semibold mb-2">Рейтинг надежности</h4>
-              <p className="text-slate-600">Система оценки и отзывов партнеров</p>
-              <Badge className="mt-4 bg-purple-100 text-purple-700">Премиум</Badge>
+              <h4 className="text-xl font-semibold mb-2 text-purple-400 font-mono">НЕЙРО-СКОРИНГ</h4>
+              <p className="text-foreground/70 font-mono text-sm">Машинное обучение риск-метрик</p>
+              <Badge className="mt-4 bg-purple-500/20 text-purple-400 border border-purple-500/50 font-mono">ПРО</Badge>
             </Card>
           </div>
         </div>
       </section>
 
       {/* Product Catalog */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-card/30 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center mb-12">
-            <h3 className="text-3xl font-bold text-slate-800">Каталог товаров</h3>
+            <h3 className="text-3xl font-bold text-primary font-mono tech-glow">ЦИФРОВОЙ КАТАЛОГ</h3>
             <Button variant="outline">
               Весь каталог
               <Icon name="ArrowRight" size={16} className="ml-2" />
@@ -124,14 +125,14 @@ export default function Index() {
                   </div>
                   <CardContent className="p-6">
                     <div className="flex items-center gap-2 mb-2">
-                      <Badge variant="secondary">Промышленность</Badge>
-                      <Badge className="bg-green-100 text-green-700">Верифицировано</Badge>
+                      <Badge className="bg-primary/20 text-primary border border-primary/50 font-mono">ИНДУСТРИЯ</Badge>
+                      <Badge className="bg-green-500/20 text-green-400 border border-green-500/50 font-mono">ВЕРИФИК</Badge>
                     </div>
-                    <h4 className="text-lg font-semibold mb-2">CNC станок промышленный</h4>
-                    <p className="text-slate-600 text-sm mb-4">Высокоточное оборудование для автоматизированного производства</p>
+                    <h4 className="text-lg font-semibold mb-2 text-primary font-mono">CNC-МОДУЛЬ 3000X</h4>
+                    <p className="text-foreground/70 text-sm mb-4 font-mono">Нейро-управляемый прецизионный станок</p>
                     <div className="flex justify-between items-center">
-                      <span className="text-2xl font-bold text-primary">₽ 2 450 000</span>
-                      <Button size="sm">В корзину</Button>
+                      <span className="text-2xl font-bold text-primary font-mono tech-glow">₽ 2.45M</span>
+                      <Button size="sm" className="bg-primary tech-glow hover:bg-primary/80 font-mono">АКТИВАЦИЯ</Button>
                     </div>
                   </CardContent>
                 </Card>
@@ -302,12 +303,12 @@ export default function Index() {
       </section>
 
       {/* Orders & Support */}
-      <section className="py-16 bg-slate-50">
+      <section className="py-16 bg-card/20 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12">
             {/* Orders Management */}
             <div>
-              <h3 className="text-2xl font-bold text-slate-800 mb-6">Управление заказами</h3>
+              <h3 className="text-2xl font-bold text-primary mb-6 font-mono tech-glow">КОММАНДНЫЙ ЦЕНТР</h3>
               <div className="space-y-4">
                 <Card className="p-4">
                   <div className="flex items-center justify-between">
@@ -316,15 +317,15 @@ export default function Index() {
                         <AvatarFallback>ТК</AvatarFallback>
                       </Avatar>
                       <div>
-                        <h4 className="font-semibold">Заказ #B2B-2024-001</h4>
-                        <p className="text-sm text-slate-600">ООО "ТехКомплект"</p>
+                        <h4 className="font-semibold text-primary font-mono">ОРДЕР #TXN-001</h4>
+                        <p className="text-sm text-foreground/70 font-mono">КОРП "TECHCOMP"</p>
                       </div>
                     </div>
-                    <Badge className="bg-green-100 text-green-700">Выполнен</Badge>
+                    <Badge className="bg-green-500/20 text-green-400 border border-green-500/50 font-mono">КОМПЛИТ</Badge>
                   </div>
                   <div className="mt-3 flex items-center justify-between">
-                    <span className="text-sm text-slate-600">CNC станок промышленный</span>
-                    <span className="font-semibold">₽ 2 450 000</span>
+                    <span className="text-sm text-foreground/70 font-mono">CNC-МОДУЛЬ 3000X</span>
+                    <span className="font-semibold text-primary font-mono">₽ 2.45M</span>
                   </div>
                 </Card>
 
@@ -370,16 +371,16 @@ export default function Index() {
 
             {/* Support */}
             <div>
-              <h3 className="text-2xl font-bold text-slate-800 mb-6">Поддержка и контакты</h3>
+              <h3 className="text-2xl font-bold text-primary mb-6 font-mono tech-glow">СИСТЕМНАЯ ПОДДЕРЖКА</h3>
               <div className="space-y-6">
                 <Card className="p-6">
                   <div className="flex items-center space-x-3 mb-4">
-                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center">
-                      <Icon name="Headphones" size={24} className="text-white" />
+                    <div className="w-12 h-12 bg-primary/20 rounded-full flex items-center justify-center tech-glow">
+                      <Icon name="Headphones" size={24} className="text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold">Техническая поддержка</h4>
-                      <p className="text-sm text-slate-600">24/7 помощь специалистов</p>
+                      <h4 className="font-semibold text-primary font-mono">НЕЙРО-ПОДДЕРЖКА</h4>
+                      <p className="text-sm text-foreground/70 font-mono">24/7 КВАНТОВЫЙ АССИСТЕНТ</p>
                     </div>
                   </div>
                   <div className="space-y-2 text-sm">
@@ -414,48 +415,48 @@ export default function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-slate-800 text-white py-12">
+      <footer className="bg-card/90 backdrop-blur-md border-t border-primary/20 text-foreground py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-lg font-semibold mb-4">B2B MARKETPLACE</h3>
-              <p className="text-slate-300 text-sm">
-                Надежная платформа для торговли между юридическими лицами
+              <h3 className="text-lg font-semibold mb-4 text-primary font-mono tech-glow">⚡ TECH MARKETPLACE</h3>
+              <p className="text-foreground/70 text-sm font-mono">
+                > Квантовая сеть корпоративных коннекторов
               </p>
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Каталог</h4>
-              <ul className="space-y-2 text-sm text-slate-300">
-                <li><a href="#" className="hover:text-white">Промышленное оборудование</a></li>
-                <li><a href="#" className="hover:text-white">Офисная мебель</a></li>
-                <li><a href="#" className="hover:text-white">Медицинское оборудование</a></li>
-                <li><a href="#" className="hover:text-white">Все категории</a></li>
+              <h4 className="font-semibold mb-4 text-cyan-400 font-mono">ЦИФРОВОЙ КАТАЛОГ</h4>
+              <ul className="space-y-2 text-sm text-foreground/70 font-mono">
+                <li><a href="#" className="hover:text-primary transition-colors">// Индустриальные модули</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">// Офисные системы</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">// Мед-технологии</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">// Все классы</a></li>
               </ul>
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Услуги</h4>
-              <ul className="space-y-2 text-sm text-slate-300">
-                <li><a href="#" className="hover:text-white">Верификация компаний</a></li>
-                <li><a href="#" className="hover:text-white">Документооборот</a></li>
-                <li><a href="#" className="hover:text-white">Логистика</a></li>
-                <li><a href="#" className="hover:text-white">Финансирование</a></li>
+              <h4 className="font-semibold mb-4 text-purple-400 font-mono">НЕЙРО-СЕРВИСЫ</h4>
+              <ul className="space-y-2 text-sm text-foreground/70 font-mono">
+                <li><a href="#" className="hover:text-primary transition-colors">// Квантовая верификация</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">// Блокчейн-оборот</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">// Авто-логистика</a></li>
+                <li><a href="#" className="hover:text-primary transition-colors">// Крипто-платежи</a></li>
               </ul>
             </div>
             
             <div>
-              <h4 className="font-semibold mb-4">Контакты</h4>
-              <ul className="space-y-2 text-sm text-slate-300">
-                <li>+7 (495) 123-45-67</li>
-                <li>info@b2bmarket.ru</li>
-                <li>Москва, Красная площадь, 1</li>
+              <h4 className="font-semibold mb-4 text-green-400 font-mono">КОННЕКЦИЯ</h4>
+              <ul className="space-y-2 text-sm text-foreground/70 font-mono">
+                <li>tel://+7.495.XXX.XX.XX</li>
+                <li>sys@techmarket.quantum</li>
+                <li>node://moscow.blockchain.1</li>
               </ul>
             </div>
           </div>
           
-          <div className="border-t border-slate-700 mt-8 pt-8 text-center text-sm text-slate-400">
-            <p>&copy; 2024 B2B Marketplace. Все права защищены.</p>
+          <div className="border-t border-primary/20 mt-8 pt-8 text-center text-sm text-foreground/50">
+            <p className="font-mono">&copy; 2024 TechMarketplace.exe | Квантовые права защищены НИИ</p>
           </div>
         </div>
       </footer>
