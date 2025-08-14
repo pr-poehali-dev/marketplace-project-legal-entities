@@ -41,7 +41,7 @@ export default function Index() {
             CYBER B2B PLATFORM
           </h2>
           <p className="text-xl md:text-2xl mb-8 opacity-90 font-mono">
-            > Соединяем корпорации через нейросеть будущего
+            {">> Соединяем корпорации через нейросеть будущего"}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <Input 
@@ -421,7 +421,7 @@ export default function Index() {
             <div>
               <h3 className="text-lg font-semibold mb-4 text-primary font-mono tech-glow">⚡ TECH MARKETPLACE</h3>
               <p className="text-foreground/70 text-sm font-mono">
-                > Квантовая сеть корпоративных коннекторов
+                {">> Квантовая сеть корпоративных коннекторов"}
               </p>
             </div>
             
